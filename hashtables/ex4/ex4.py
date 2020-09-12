@@ -1,10 +1,14 @@
 def has_negatives(a):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
-
-    return result
+    # make a dict
+    dict = {}
+    # make an array of negative number
+    res = []
+    for i in range(len(a)):
+        dict[a[i]] = a[i]
+        if a[i] != 0 and - a[i] in dict:
+            res.append(abs(a[i]))
+    # make an array of positive nums
+    return res
 
 
 if __name__ == "__main__":
