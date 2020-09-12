@@ -1,10 +1,18 @@
 def intersection(arrays):
-    """
-    YOUR CODE HERE
-    """
-    # Your code here
+    # make dict
+    dict = {}
+    # loop through 2d array
+    res = []
 
-    return result
+    for row in arrays:
+        for column in row:
+            if column not in dict:
+                dict[column] = 1
+            else:
+                dict[column] += 1
+                if dict[column] == len(arrays):
+                    res.append(column)
+    return res
 
 
 if __name__ == "__main__":

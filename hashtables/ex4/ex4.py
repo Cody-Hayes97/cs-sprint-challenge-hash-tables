@@ -7,9 +7,7 @@ def has_negatives(a):
         dict[a[i]] = a[i]
         if a[i] != 0 and - a[i] in dict:
             res.append(abs(a[i]))
-
     # make an array of positive nums
-
     return res
 
 
